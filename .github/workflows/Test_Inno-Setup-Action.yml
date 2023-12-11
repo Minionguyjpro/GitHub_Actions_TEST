@@ -6,10 +6,10 @@
   
   jobs:
    test:
-      runs-on: windows-latest
+      runs-on: ubuntu-latest
       steps: 
 
-
+       - uses: actions/checkout@v4
          
        - name: Inno Setup Action (push)
          uses: Minionguyjpro/Inno-Setup-Action@main
