@@ -1,0 +1,16 @@
+# This test script does some tests from my GitHub action repository: https://github.com/Minionguyjpro/Inno-Setup-Action
+name: Run a test
+
+on:
+  push:
+
+jobs:
+ test:
+    runs-on: windows-latest
+    steps: 
+       
+     - name: Inno Setup Action (push)
+       uses: Minionguyjpro/Inno-Setup-Action@main
+       with:
+         path: scripts\test.iss
+         options: /O+
